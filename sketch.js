@@ -8,7 +8,7 @@ var Engine = Matter.Engine,
 var particles = [];
 var plinkos = [];
 
-var divisions
+var divisions = [];
 var ground;
 var plinkos;
 var particles;
@@ -23,7 +23,7 @@ function setup() {
 
 
    for (var k = 0; k <=width; k = k + 80) {
-     divisions = new Divisions(k, height-divisionHeight/2, 10, divisionHeight);
+     divisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight));
    }
 
 
